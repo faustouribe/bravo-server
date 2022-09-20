@@ -2,6 +2,7 @@
 source local
 docker run -d \
   --name=mariadb \
+  --net=bravo \
   -e PUID=1000 \
   -e PGID=1000 \
   -e MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PWD \
