@@ -2,6 +2,7 @@
 source local
 docker run -d \
   --name=nextcloud \
+  --net=bravo \
   -e PUID=1000 \
   -e PGID=1000 \
   -e TZ=$TIMEZONE \
