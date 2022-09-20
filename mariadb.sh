@@ -9,7 +9,7 @@ docker run -d \
   -e TZ=$TIMEZONE \
   -e MYSQL_DATABASE=$DB_NAME \
   -e MYSQL_USER=$DB_USER \
-  -e MYSQL_PASSWORD=DB_PWD \
+  -e MYSQL_PASSWORD=$DB_PWD \
   -p 3306:3306 \
   -v ~/config/mariadb:/config \
   --restart unless-stopped \
