@@ -1,6 +1,6 @@
 #!/bin/bash -x
 source local
-docker run -t -d \
+docker run -d \
   --name=collabora \
   --net=bravo \
   -p 9980:9980 \ 
