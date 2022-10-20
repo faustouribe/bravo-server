@@ -7,5 +7,6 @@ docker run -t -d \
   -e aliasgroup1="https://cloud.uribe.com.mx:443" \
   -e username=$COLLAB_USER \
   -e password=$COLLAB_PWD \
+  -e extra_params="--o:ssl.enable=false" \
   --restart unless-stopped \
 collabora/code
