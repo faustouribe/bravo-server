@@ -8,5 +8,6 @@ docker run -t -d \
   -e username=$COLLAB_USER \
   -e password=$COLLAB_PWD \
   -e extra_params="--o:ssl.enable=false" \
+  -v ~/config/collabora:/etc/coolwsd/ \
   --restart unless-stopped \
 collabora/code
