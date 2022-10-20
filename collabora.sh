@@ -4,8 +4,8 @@ docker run -t -d \
   --name=collabora \
   --net=bravo \
   -p 127.0.0.1:9980:9980 
-  -e -e "aliasgroup1=https://cloud.uribe.com.mx:443" 
-  -e "username=admin" 
-  -e "password=S3cRet" 
+  -e "aliasgroup1=https://cloud.uribe.com.mx:443" 
+  -e username=$COLLAB_USER 
+  -e password=$COLLAB_PWD 
   --restart always 
 collabora/code
